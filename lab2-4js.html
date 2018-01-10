@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Sam Robinson</title>
+<head>
+<style>
+.text{background-color: #61d7a4; color: #666666; font-family: arial; font-size: 14pt; border: solid #000000 1px; border-radius: 10px}
+.button{background-color: #990000; color: #ffffff; font-family: arial; border: solid #660000 2px; padding: 10px; border-radius: 5px}
+.center{text-align: center}
+body{background-color: #a62f00; font-family: arial}
+header{width: 600px; height: 60px; margin: auto; margin-bottom: 10px; background-color: #ff9b73; text-align: center; border-radius: 10px; color: #a62f00}
+h1{line-height: 50px}
+option{background-color: #61d7a4}
+section{width: 800px; min-height: 100px; margin: auto; background-color: #bf5930; border: solid #000000 1px; border-radius: 10px; padding: 5px; text-align: center}
+select{background-color: #61d7a4; border-radius: 5px; font-size: 14pt; border: solid #000000 1px}
+table{margin: auto}
+td{text-align: left}
+</style>
+</head>
+<body>
+<header>
+<h1>Online Computer Survey</h1>
+</header>
+<section>
+<form method="post" action="http://www.ieclass.com/jslabs/lab2-4.php">
+</form>
+<input type="hidden" value="3287" name="labcode">
+<table>
+<tr>
+<td>Your Name:</td>
+<td><input type="text" size="20" maxlength="20" name="sender" class="text"></td>
+<td>Email:</td>
+<td><input type="text" size="20" maxlength="20" name="email" class="text"></td>
+</tr>
+<tr>
+<td>What processor do you use:</td>
+<td><input type="radio" name="processor" value="Pentium"/>Pentium <input type="radio" name="processor" value="Mac"/>Mac<input type="radio" name="processor" value="AMD"/>AMD</td>
+<td>What is the speed of your processor?</td>
+<td><select name="speed"><option value="1Ghz">1Ghz</option><option value="1.6Ghz">1.6Ghz</option><option value="1.8Ghz">1.8Ghz</option><option value="2.0Ghz">2.0Ghz</option><option value="2.2Ghz">2.2Ghz</option></select></td>
+</tr>
+<tr>
+<td colspan="3">What do you use your computer for?</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="wordProcessing"/>Word Processing</td>
+<td><input type="checkbox" name="internet"/>Internet</td>
+<td><input type="checkbox" name="research"/>Research</td>
+<td><input type="checkbox" name="onlineBanking"/>Online Banking</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="games"/>Games</td>
+<td><input type="checkbox" name="email"/>Email</td>
+<td><input type="checkbox" name="webDesign"/>Web Design</td>
+<td><input type="checkbox" name="other"/>Other</td>
+</tr>
+<tr>
+<td colspan="3">Do you plan on purchasing another computer anytime soon?</td>
+<td><select name="newcomp"><option value="Yes">Yes</option><option value="No">No</option></select></td>
+</tr>
+<tr>
+<td colspan="3":>What peripherals do you have?</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="scanner"/>Scanner</td>
+<td><input type="checkbox" name="printer"/>Printer</td>
+<td><input type="checkbox" name="camera"/>Digital Camera</td>
+<td><input type="checkbox" name="flatScreen"/>Flat Screen</td>
+</tr>
+<tr>
+<td>Internet:
+<td colspan="2"><input type="radio" name="internet" value="Broadband"/>Broadband 
+<input type="radio" name="internet" value="Dial Up"/>Dial Up
+<input type="radio" name="internet" value="None"/>None</td>
+</tr>
+<tr>
+<td><textarea rows="4" cols="20" name="comments" placeholder="Additional Comments" class="text"></textarea></td>
+</tr>
+<tr>
+<td class="center"><form method="post" action="jslabs/lesson2.php"/>
+     <input type="submit" value="Submit Survey" class="button"/>
+     </form></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td class="center"><form>
+     <input type="reset" value="Clear Form" class="button"/>
+     </form>
+</tr>
+</table>
+</section>
+</body>
+</html>
